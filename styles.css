@@ -1,0 +1,484 @@
+@font-face {
+  font-family: wideFont;
+  src: url(CyGrotesk-WideMedium.otf);
+}
+@font-face {
+  font-family: minimalFont;
+  src: url(hilmar-5.ttf);
+}
+
+body {
+  font-family: minimalFont;
+  letter-spacing: 1.5px;
+  background-color: #1d1d1d;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.Headline {
+  font-family: wideFont;
+  font-size: 70px;
+  letter-spacing: 1rem;
+}
+
+.Headings_Font {
+  font-family: wideFont;
+  letter-spacing: 1px;
+}
+
+.Description {
+  text-align: center;
+  font-size: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.min-h-full {
+  min-height: 100vh;
+}
+
+.relative {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.h-half {
+  height: 50vh;
+}
+
+.bg-dark {
+  background-color: #1d1d1d;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.tracking-tight {
+  letter-spacing: -0.05em;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.max-w-800 {
+  max-width: 800px;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.md-grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text-muted-foreground {
+  color: #b0b0b0;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+  width: 350px;
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: #b0b0b0;
+}
+
+.grid div {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, transparent, #1d1d1d);
+}
+
+section .header {
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.features {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.features .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.features .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.features .card span {
+  display: inline-block;
+  background-color: #1e40af;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.features .card h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.features .card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.features .card a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.features .card a:hover {
+  color: #1e40af;
+}
+
+.sub-header {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.btn-group {
+  margin: 45px 0;
+}
+
+.btn-group .btn {
+  border-color: #d5d5d5;
+  color: #fff;
+  background-color: #333;
+  padding: 12px 25px;
+  margin: 5px 0px;
+  margin-right: 7px;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+  font-weight: 600;
+}
+
+.btn.active {
+  border-color: #007ced;
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+#container_projects {
+  margin-bottom: 50px;
+}
+.Image_chota {
+  width: 250px;
+  border-radius: 20px;
+}
+.Image_chota3{
+  width: 350px;
+  height: 390px;
+  border-radius: 20px;
+}
+.Image_End {
+  border-radius: 20px;
+}
+
+.bg-new {
+  background-image: url(XXXTENTATION_PIC\ \(8\).jpg);
+  background-size: cover;
+}
+
+.bg-two {
+  background-image: url(Album_Pic\ \(3\).jpg);
+  background-size: cover;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 700px;
+  background-color: #27272a;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(85, 69, 69, 0.315);
+}
+
+.form .title {
+  color: rgb(255, 18, 18);
+  font-size: 30px;
+  margin: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 500px;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 500px;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  width: 200px;
+  margin: 10px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #27272a;
+  font-weight: 600;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #c01818;
+  color: white;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer .column .logo {
+  max-width: 100px;
+  margin-bottom: 2rem;
+}
+
+footer .column p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+footer .column .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .column .socials a {
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 50%;
+  
+}
+
+footer .column .socials a:hover {
+  color: #b91010;
+  border-color: #bd1f1f;
+}
+
+.footer-heading {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+footer p,
+footer a {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  padding: 8px;
+}
+
+footer a:hover {
+  color: #c51919;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 60px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .bd-grid {
+    display: block;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .features .card {
+    padding: 1rem 0.5rem;
+  }
+
+  .rounded-2xl {
+    width: 280px;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+  }
+}
