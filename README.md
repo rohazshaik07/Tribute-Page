@@ -8,9 +8,9 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Prerequisites](#Prerequisites)
+- [Installation](#Installation)
+- [Demo](#Demo)
 - [Contact](#contact)
 
 ## Project Overview
